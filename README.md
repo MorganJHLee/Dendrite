@@ -32,7 +32,6 @@ Dendrite is a desktop application for visual knowledge management, inspired by h
 - **File-based storage**: All notes are plain markdown files in folders you control
 - **Frontmatter support**: Add metadata with YAML frontmatter
 - **Wikilinks**: Connect notes with `[[Note Name]]` syntax
-- **Tags**: Organize with `#tags` throughout your content
 - **Bidirectional links**: Automatic backlink tracking
 - **Real-time sync**: File watcher automatically updates when files change
 
