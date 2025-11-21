@@ -1,0 +1,125 @@
+.vault-switcher {
+  position: relative;
+  -webkit-app-region: no-drag;
+}
+
+.vault-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  color: var(--color-text-primary);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.vault-trigger:hover {
+  background: var(--glass-bg);
+  border-color: var(--color-border);
+}
+
+.vault-trigger .vault-name {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.vault-trigger .chevron {
+  color: var(--color-text-muted);
+  transition: transform var(--transition-base);
+}
+
+.vault-trigger.active .chevron {
+  transform: rotate(180deg);
+}
+
+.vault-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 260px;
+  background: var(--glass-bg-strong);
+  backdrop-filter: blur(var(--glass-blur-strong));
+  -webkit-backdrop-filter: blur(var(--glass-blur-strong));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-float-lg);
+  padding: 4px;
+  z-index: 1000;
+  animation: slideDown var(--transition-fast);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-section-label {
+  padding: 8px 12px 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  letter-spacing: 0.5px;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  color: var(--color-text-primary);
+  text-align: left;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  transition: background-color var(--transition-fast);
+}
+
+.dropdown-item:hover {
+  background: var(--color-accent-subtle);
+}
+
+.dropdown-item.active {
+  background: var(--color-accent-subtle);
+  color: var(--color-accent-primary);
+}
+
+.dropdown-item .vault-path {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  margin-left: auto;
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: 4px 0;
+}
+
+.dropdown-item .icon {
+  color: var(--color-text-muted);
+}
+
+.dropdown-item:hover .icon {
+  color: var(--color-text-primary);
+}
