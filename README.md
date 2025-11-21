@@ -307,25 +307,6 @@ Uses `electron-builder` to create platform-specific installers:
 
 ---
 
-## 🗺️ Roadmap
-
-- [x] Markdown note editing with CodeMirror
-- [x] Visual whiteboard with draggable cards
-- [x] Knowledge graph visualization
-- [x] PDF viewing and highlight extraction
-- [x] Multiple whiteboard support
-- [x] Search with dropdown suggestions
-- [ ] Enhanced markdown editor (split view, toolbar)
-- [ ] Image embedding and management
-- [ ] Export to various formats (PDF, HTML)
-- [ ] Theme customization
-- [ ] Plugin system
-- [ ] Mobile companion app
-- [ ] Optional cloud sync
-- [ ] Collaboration features
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Here's how you can help:
@@ -368,7 +349,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **Special Thanks:**
 - The open-source community for amazing tools and libraries
-- Early users and contributors who help shape Dendrite's development
 
 ---
 
